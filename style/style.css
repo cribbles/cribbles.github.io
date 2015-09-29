@@ -1,0 +1,104 @@
+html, head, body, section, h2, h3, h4,
+p, div, img, figure, span, ul, li, a {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  box-sizing: inherit;
+  vertical-align: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 600px;
+  padding: 30px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background:
+      linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url(../img/fabric_of_squares_gray.png);
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.header {
+  display: block;
+  background: white;
+}
+
+section {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  padding: 30px 0;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: underline;
+  color: #37b;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.about {
+  display: block;
+}
+
+.skills img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.description span {
+  display: block;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.description ul {
+  list-style: circle;
+  margin: 10px 0 10px 20px;
+}
+
+.description ul > li {
+  margin: 3px 0;
+}
+
+.project {
+  display: block;
+  margin: 20px 0;
+}
+
+.contact span {
+  display: block;
+  margin: 10px 0;
+}
