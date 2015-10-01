@@ -218,7 +218,7 @@ hr {
   display: block;
   margin: 27px 27px;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 2px solid #eee;
   background: #333;
   font-size: 15px;
   color: white;
@@ -232,6 +232,7 @@ hr {
 }
 
 .project-links a:hover {
+  background: #444;
   text-decoration: none;
 }
 
