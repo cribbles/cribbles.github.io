@@ -77,6 +77,64 @@
         </figure>
       </div>
 
+      <hr>
+
+      <div class="project">
+        <div class="description">
+          <h4>TikTak</h4>
+          <span>
+            Anonymous forum engine built on Rails 4
+          </span>
+          <ul>
+            <li>
+              BSS-style assets include private messaging, quoting, e-mail auth
+              and password resets
+            </li>
+            <li>
+              Robust admin options include IP blacklisting, moderation and
+              shadowbanning
+            </li>
+            <li>
+              Integrates with Google reCAPTCHA API for spam control
+            </li>
+            <li>
+              Full RSpec and Capybara unit / integration test suite
+            </li>
+          </ul>
+        </div>
+        <figure>
+          <img src="img/tiktak.png">
+        </figure>
+      </div>
+
+      <hr>
+
+      <div class="project">
+        <div class="description">
+          <h4>snake.js</h4>
+          <span>
+            Browser-based Javascript remake of the classic arcade game
+          </span>
+          <ul>
+            <li>
+              Implements core gameplay using jQuery events and DOM manipulation
+            </li>
+            <li>
+              Smooth rendering engine only redraws changing portions of the
+              screen
+            </li>
+            <li>
+              Snake AI employs A* path-finding algorithm to find apple
+            </li>
+          </ul>
+        </div>
+        <figure>
+          <img src="img/snake.png">
+        </figure>
+      </div>
+
+      <hr>
+
       <div class="project">
         <div class="description">
           <h4>Chess Suite</h4>
@@ -100,77 +158,30 @@
         </figure>
       </div>
 
-      <div class="project">
-        <div class="description">
-          <h4>snake.js</h4>
-          <span>
-            Browser-based Javascript remake of the classic arcade game
-          </span>
-          <ul>
-            <li>
-              Implements core gameplay using jQuery events and DOM manipulation
-            </li>
-            <li>
-              Smooth rendering engine only redraws changing portions of the
-              screen
-            </li>
-          </ul>
-        </div>
-        <figure>
-          <img src="img/snake.png">
-        </figure>
-      </div>
+      <hr>
 
       <div class="project">
         <div class="description">
           <h4>ActiveRecordLite</h4>
           <span>
-            Ruby chess and checkers suite developed for CLI
+            Ruby ORM built for SQLite
           </span>
           <ul>
             <li>
-              ChessUtils module and class inheritance structure DRY up code
+              Replicates core functionality of ActiveRecord::Base and
+              ActiveRecord::Relation
             </li>
             <li>
-              Checkers AI recursively looks for the best possible move sequence
+              AR::Relation search parameters are stackable and lazily evaluated
             </li>
             <li>
-              Move validation system allows full range of piece trajectories
-            </li>
-            <li>
-              Custom-built CLI parser enables UI with algebraic chess notation
+              Implements SQL associations including has_many, belongs_to and
+              has_one: :through
             </li>
           </ul>
         </div>
         <figure>
           <img src="img/active-record-lite.png">
-        </figure>
-      </div>
-
-      <div class="project">
-        <div class="description">
-          <h4>TikTak</h4>
-          <span>
-            Single-page web application using Rails as an API
-            for Backbone.js.
-          </span>
-          <ul>
-            <li>
-              Hand-rolled secure Rails user auth with Omniauth
-            </li>
-            <li>
-              RESTful, namespaced API routes with nested JSON templating
-            </li>
-            <li>
-              Import utility makes use of Discogs API to construct seed data
-            </li>
-            <li>
-              AWS-integrated file upload using Paperclip and Figaro
-            </li>
-          </ul>
-        </div>
-        <figure>
-          <img src="img/tiktak.png">
         </figure>
       </div>
     </section>
