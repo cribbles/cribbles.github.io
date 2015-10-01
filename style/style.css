@@ -138,6 +138,7 @@ a:hover {
   border: 3px solid #333;
   display: block;
   float: right;
+  position: relative;
   margin-left: 20px;
 }
 
@@ -179,6 +180,7 @@ a:hover {
 .container > figure {
   display: block;
   float: left;
+  position: relative;
   padding: 25px;
 }
 
@@ -201,4 +203,38 @@ hr {
   height: 1px;
   background: #eee;
   margin: 20px 0;
+}
+
+.project-links {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  transition: opacity 0.5s;
+}
+
+.project-links a {
+  display: block;
+  margin: 27px 27px;
+  padding: 10px;
+  border: 1px solid #eee;
+  background: #333;
+  font-size: 15px;
+  color: white;
+  width: 90px;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.project-links a.solo {
+  margin: 62px 27px;
+}
+
+.project-links a:hover {
+  text-decoration: none;
+}
+
+.project-links:hover {
+  opacity: 1;
 }
