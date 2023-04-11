@@ -44,16 +44,43 @@
     <section class="projects">
       <div class="project">
         <div class="description">
+          <h3>Wordle With Friends
+            (<a href="https://github.com/cribbles/wordle-with-friends">GitHub</a>,
+            <a href="https://friendle.fly.dev">Live</a>)
+          </h3>
+          <span>
+            Multiplayer Wordle clone for Rails 7 / Hotwire
+          </span>
+          <ul>
+            <li>
+              Replicates core Wordle functionality and design
+            </li>
+            <li>
+              Enables real-time, websockets-driven multiplayer via Turbo streams
+            </li>
+            <li>
+              LiveView-style hot UI updates powered by Stimulus.js
+            </li>
+          </ul>
+        </div>
+        <figure>
+          <img src="img/wordle-with-friends.png">
+        </figure>
+      </div>
+
+      <hr>
+
+      <div class="project">
+        <div class="description">
           <h3>Slipmat
             (<a href="https://github.com/cribbles/slipmat">GitHub</a>)
           </h3>
           <span>
-            Single-page web application using Rails as an API
-            for a single-page app.
+            Discogs clone reimplemented as an SPA using Rails as a JSON API
           </span>
           <ul>
             <li>
-              Hand-rolled secure Rails user auth with Omniauth
+              Hand-rolled secure user auth via Omniauth
             </li>
             <li>
               RESTful, namespaced API routes with nested JSON templating
@@ -68,6 +95,69 @@
         </div>
         <figure>
           <img src="img/slipmat.png">
+        </figure>
+      </div>
+
+      <hr>
+
+      <div class="project">
+        <div class="description">
+          <h3>discogs-shuffle
+            (<a href="https://github.com/cribbles/discogs-shuffle">GitHub</a>,
+            <a href="https://hexdocs.pm/discogs/readme.html">hexdocs</a>)
+          </h3>
+          <span>
+            Discogs SDK for Elixir 1.12
+          </span>
+          <ul>
+            <li>
+              Stores Discogs user collections to a local database and enables
+              interaction via Ecto wrappers
+            </li>
+            <li>
+              Contains Ecto mappings for the Discogs User and Artist -> Release
+              -> Record mappings
+            </li>
+            <li>
+              Exhaustively documented, tested and type-speced (via ExDoc,
+              Credo, and Dialyzer)
+            </li>
+          </ul>
+        </div>
+        <figure>
+          <img src="img/discogs-shuffle.png">
+        </figure>
+      </div>
+
+      <hr>
+
+      <div class="project">
+        <div class="description">
+          <h3>TikTak
+            (<a href="https://github.com/cribbles/tiktak">GitHub</a>)
+          </h3>
+          <span>
+            Anonymous forum engine for workspaces
+          </span>
+          <ul>
+            <li>
+              BSS-style assets include private messaging, quoting, e-mail auth
+              and password resets
+            </li>
+            <li>
+              Google reCAPTCHA integration for spam control
+            </li>
+            <li>
+              Robust admin options include IP blacklisting, moderation and
+              shadowbanning
+            </li>
+            <li>
+              Full RSpec and Capybara unit / integration test suite
+            </li>
+          </ul>
+        </div>
+        <figure>
+          <img src="img/tiktak.png">
         </figure>
       </div>
 
@@ -104,43 +194,11 @@
 
       <div class="project">
         <div class="description">
-          <h3>TikTak
-            (<a href="https://github.com/cribbles/tiktak">GitHub</a>)
-          </h3>
-          <span>
-            Anonymous forum engine built on Rails 4
-          </span>
-          <ul>
-            <li>
-              BSS-style assets include private messaging, quoting, e-mail auth
-              and password resets
-            </li>
-            <li>
-              Integrates with Google reCAPTCHA API for spam control
-            </li>
-            <li>
-              Robust admin options include IP blacklisting, moderation and
-              shadowbanning
-            </li>
-            <li>
-              Full RSpec and Capybara unit / integration test suite
-            </li>
-          </ul>
-        </div>
-        <figure>
-          <img src="img/tiktak.png">
-        </figure>
-      </div>
-
-      <hr>
-
-      <div class="project">
-        <div class="description">
           <h3>Chess Suite
             (<a href="https://github.com/cribbles/chess">GitHub</a>)
           </h3>
           <span>
-            Ruby chess and checkers suite developed for CLI
+            CLI chess and checkers suite
           </span>
           <ul>
             <li>
@@ -165,11 +223,11 @@
       <div class="project">
         <div class="description">
           <h3>snake.js
-            (<a href="https://github.com/cribbles/snake">GitHub</a> /
+            (<a href="https://github.com/cribbles/snake">GitHub</a>,
              <a href="http://chrissloop.com/snake">Live</a>)
           </h3>
           <span>
-            Browser-based Javascript remake of the classic arcade game
+            Browser-based JS remake of the Nokia classic
           </span>
           <ul>
             <li>
