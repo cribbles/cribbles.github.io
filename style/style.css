@@ -205,9 +205,13 @@ hr {
   margin: 20px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     padding: 25px;
+  }
+
+  h1 {
+    padding: 20px 0 30px 0;
   }
 
   .content {
@@ -219,6 +223,20 @@ hr {
   }
 
   .project > .description {
-    width: 58%;
+    width: 100%;
+  }
+
+  .project > figure {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container > figure {
+    padding: 13px;
   }
 }
