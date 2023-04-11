@@ -239,3 +239,21 @@ hr {
 .project-links:hover {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 25px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .project > .description {
+    width: 58%;
+  }
+}
