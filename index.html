@@ -1,249 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Chris Sloop</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
-  <!-- Background downloaded from Subtle Patterns: http://subtlepatterns.com/-->
+  <title>Chris Sloop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <main class="content">
+  <main>
     <h1>Chris Sloop</h1>
-
-    <h2>About Me</h2>
-    <section class="about">
-      <p>
-        Hi! I'm an NYC and Berlin-based software engineer.
-      </p>
-      <p>
-        I've built things with <strong>Node.js</strong>, <strong>React</strong>,
-        <strong>Redux</strong>, <strong>Elixir</strong>,
-        <strong>Ruby</strong>, <strong>Rails</strong>,
-        <strong>GraphQL</strong>, and <strong>PHP/MySQL</strong>.
-      </p>
-      <p>
-        I'm interested in developing sustainable web applications, robust APIs,
-        playing with emerging technologies, functional programming
-        languages (in particular MLs and Lisps), test-driven development, and
-        responsive web interfaces.
-      </p>
-      <p>
-        I'm on <a href="https://github.com/cribbles">GitHub</a> and
-        <a href="https://linkedin.com/in/sloop">LinkedIn</a>.
-      </p>
-      <p>
-        <a href="assets/Chris Sloop - Resume.pdf">
-          See my full resume →
-        </a>
-      </p>
-    </section>
-
-    <h2>Things I've Made</h2>
-    <section class="projects">
-      <div class="project">
-        <div class="description">
-          <h3>Wordle With Friends
-            (<a href="https://github.com/cribbles/wordle-with-friends">GitHub</a>,
-            <a href="https://friendle.fly.dev">Live</a>)
-          </h3>
-          <span>
-            Multiplayer Wordle clone for Rails 7 / Hotwire
-          </span>
-          <ul>
-            <li>
-              Replicates core Wordle functionality and design
-            </li>
-            <li>
-              Enables real-time, websockets-driven multiplayer via Turbo streams
-            </li>
-            <li>
-              LiveView-style hot UI updates powered by Stimulus.js
-            </li>
-          </ul>
-        </div>
-        <figure>
-          <img src="img/projects/wordle-with-friends.png">
-        </figure>
-      </div>
-
-      <hr>
-
-      <div class="project">
-        <div class="description">
-          <h3>Slipmat
-            (<a href="https://github.com/cribbles/slipmat">GitHub</a>)
-          </h3>
-          <span>
-            Discogs clone reimplemented as an SPA using Rails as a JSON API
-          </span>
-          <ul>
-            <li>
-              Hand-rolled secure user auth via Omniauth
-            </li>
-            <li>
-              RESTful, namespaced API routes with nested JSON templating
-            </li>
-            <li>
-              Import utility makes use of Discogs API to construct seed data
-            </li>
-            <li>
-              AWS-integrated file upload using Paperclip and Figaro
-            </li>
-          </ul>
-        </div>
-        <figure>
-          <img src="img/projects/slipmat.png">
-        </figure>
-      </div>
-
-      <hr>
-
-      <div class="project">
-        <div class="description">
-          <h3>discogs-shuffle
-            (<a href="https://github.com/cribbles/discogs-shuffle">GitHub</a>,
-            <a href="https://hexdocs.pm/discogs/readme.html">hexdocs</a>)
-          </h3>
-          <span>
-            Discogs SDK for Elixir 1.12
-          </span>
-          <ul>
-            <li>
-              Stores Discogs user collections to a local database and enables
-              interaction via Ecto wrappers
-            </li>
-            <li>
-              Contains Ecto mappings for the Discogs User and Artist -> Release
-              -> Record mappings
-            </li>
-            <li>
-              Exhaustively documented, tested and type-speced (via ExDoc,
-              Credo, and Dialyzer)
-            </li>
-          </ul>
-        </div>
-        <figure>
-          <img src="img/projects/discogs-shuffle.png">
-        </figure>
-      </div>
-
-      <hr>
-
-      <div class="project">
-        <div class="description">
-          <h3>TikTak
-            (<a href="https://github.com/cribbles/tiktak">GitHub</a>)
-          </h3>
-          <span>
-            Anonymous forum engine for workspaces
-          </span>
-          <ul>
-            <li>
-              BSS-style assets include private messaging, quoting, e-mail auth
-              and password resets
-            </li>
-            <li>
-              Google reCAPTCHA integration for spam control
-            </li>
-            <li>
-              Robust admin options include IP blacklisting, moderation and
-              shadowbanning
-            </li>
-            <li>
-              Full RSpec and Capybara unit / integration test suite
-            </li>
-          </ul>
-        </div>
-        <figure>
-          <img src="img/projects/tiktak.png">
-        </figure>
-      </div>
-
-      <hr>
-
-      <div class="project">
-        <div class="description">
-          <h3>ActiveRecordLite
-            (<a href="https://github.com/cribbles/ActiveRecordLite">GitHub</a>)
-          </h3>
-          <span>
-            Ruby ORM built for SQLite
-          </span>
-          <ul>
-            <li>
-              Replicates core functionality of ActiveRecord::Base and
-              ActiveRecord::Relation
-            </li>
-            <li>
-              AR::Relation search parameters are stackable and lazily evaluated
-            </li>
-            <li>
-              Implements SQL associations including has_many, belongs_to and
-              has_one: :through
-            </li>
-          </ul>
-        </div>
-        <figure>
-          <img src="img/projects/active-record-lite.png">
-        </figure>
-      </div>
-
-      <hr>
-
-      <div class="project">
-        <div class="description">
-          <h3>Chess Suite
-            (<a href="https://github.com/cribbles/chess">GitHub</a>)
-          </h3>
-          <span>
-            CLI chess and checkers suite
-          </span>
-          <ul>
-            <li>
-              ChessUtils module and class inheritance structure DRY up code
-            </li>
-            <li>
-              Checkers AI depth-first searches move tree to determine best
-              possible move sequence
-            </li>
-            <li>
-              Custom-built CLI parser enables UI with algebraic chess notation
-            </li>
-          </ul>
-        </div>
-        <figure>
-          <img src="img/projects/chess.png">
-        </figure>
-      </div>
-    </section>
-
-    <hr>
-    <div class="contact">
-      <div class="container">
-        <figure>
-          <a href="https://github.com/cribbles">
-            <img src="img/icons/github.svg">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://linkedin.com/in/sloop">
-            <img src="img/icons/linkedin.svg">
-          </a>
-        </figure>
-        <figure>
-          <a href="mailto:chris@chrissloop.com">
-            <img src="img/icons/mail.svg">
-          </a>
-        </figure>
-        <figure>
-          <a href="assets/Chris Sloop - Resume.pdf">
-            <img src="img/icons/profile.svg">
-          </a>
-        </figure>
-      </div>
-    </div>
+    <p class="location"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 58 58"><line style="fill:none;stroke:#556080;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" x1="29" y1="28" x2="29" y2="57"/><circle style="fill:#DD352E;" cx="29" cy="14" r="14"/><circle style="fill:#F76363;" cx="24" cy="10" r="3"/></svg> Berlin, Germany</p>
+    <p>
+      Software engineer at Shopify, where I lead backend initiatives on
+      commerce infrastructure and merchandising systems at planetary scale.
+      Currently building the product data layer for agentic commerce.
+      Previously at Contentful and Refinery29.
+    </p>
+    <nav>
+      <a href="https://github.com/cribbles">GitHub</a>
+      <a href="https://linkedin.com/in/sloop">LinkedIn</a>
+      <a href="mailto:chris@chrissloop.com">Email</a>
+      <a href="assets/Chris Sloop - Resume.pdf">Resume</a>
+    </nav>
   </main>
 </body>
 </html>

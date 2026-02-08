@@ -1,242 +1,87 @@
-html, head, body, section, h2, h3, h4,
-p, div, img, figure, span, ul, li, a, hr,
-b, strong {
+* {
   margin: 0;
-  border: 0;
   padding: 0;
-
-  background: transparent;
-  color: inherit;
-  font-size: inherit;
-  text-align: inherit;
-  text-decoration: inherit;
-  box-sizing: inherit;
-  vertical-align: inherit;
-}
-
-ul {
-  list-style: none;
+  box-sizing: border-box;
 }
 
 body {
-  border-top: 10px solid #E4EDF4;
-  padding: 30px;
+  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  color: #1a1a1a;
+  background: #faf6f0;
+  line-height: 1.7;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  max-width: 580px;
   margin: 0 auto;
-  font-family: "Roboto", "Helvetica Neue", sans-serif;
-  color: #333;
-  background:
-      linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
-      ),
-      url(../img/style/background.png);
-  line-height: 20px;
-  font-size: 16px;
-}
-
-.content {
-  width: 660px;
-  margin: 0 auto;
-}
-
-.header {
-  display: block;
-  background: white;
-}
-
-section {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  padding: 140px 24px;
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 52px;
-  padding: 30px 0 40px 0;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
 }
 
-h2 {
-  display: block;
-  margin-top: 10px;
-  font-weight: 700;
-  font-size: 22px;
+.location {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-h2:after {
-  content: "";
-  display: block;
-  margin-top: 5px;
-  background: #eee;
-  height: 1px;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 700;
+.location svg {
+  flex-shrink: 0;
 }
 
 p {
-  font-size: 16px;
-  margin: 15px 0;
-  width: 590px;
-  line-height: 23px;
+  color: #333;
+  line-height: 1.75;
 }
 
 a {
-  color: #37b;
-  font-weight: 700;
-  font-size: 19px;
-}
-
-strong {
-  font-weight: 700;
-  font-size: 19px;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #aaa;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-color: #1a1a1a;
 }
 
-.about {
-  display: block;
+nav {
+  margin-top: 36px;
+  display: flex;
+  gap: 28px;
 }
 
-.skills img {
-  width: 35px;
-  height: 35px;
-  margin: 0 5px;
-}
-
-.description span {
-  display: block;
-  font-style: italic;
+nav a {
   font-size: 15px;
-  margin: 5px 0;
+  color: #666;
 }
 
-.description ul {
-  list-style: disc;
-  margin: 10px 0 10px 20px;
+nav a:hover {
+  color: #1a1a1a;
 }
 
-.description ul > li {
-  margin: 3px 0;
-}
-
-.project {
-  font-size: 14.5px;
-  line-height: 21px;
-  display: block;
-  margin: 25px 0;
-}
-
-.project > figure {
-  width: 185px;
-  height: 185px;
-  background: #ddd;
-  border: 3px solid #333;
-  display: block;
-  float: right;
-  position: relative;
-  margin-left: 20px;
-}
-
-.project:after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-.project > figure > img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  float: right;
-}
-
-.project > .description {
-  width: 430px;
-  display: block;
-  float: left;
-}
-
-.contact {
-  display: block;
-}
-
-.container:after {
-  display: block;
-  content: "";
-  clear: both;
-}
-
-.container {
-  width: 400px;
-  display: block;
-  margin: 0 auto;
-}
-
-.container > figure {
-  display: block;
-  float: left;
-  position: relative;
-  padding: 25px;
-}
-
-.container > figure > a {
-  text-decoration: none;
-}
-
-.contact img {
-  height: 50px;
-  width: 50px;
-}
-
-.contact span {
-  display: inline;
-  margin-left: 5px;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  background: #eee;
-  margin: 20px 0;
-}
-
-@media (max-width: 767px) {
-  body {
-    padding: 25px;
+@media (max-width: 600px) {
+  main {
+    padding: 80px 20px;
   }
 
   h1 {
-    padding: 20px 0 30px 0;
+    font-size: 24px;
   }
 
-  .content {
-    width: 100%;
-  }
-
-  p {
-    width: 100%;
-  }
-
-  .project > .description {
-    width: 100%;
-  }
-
-  .project > figure {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-  }
-
-  .container {
-    width: 305px;
-  }
-
-  .container > figure {
-    padding: 13px;
+  body {
+    font-size: 17px;
   }
 }
